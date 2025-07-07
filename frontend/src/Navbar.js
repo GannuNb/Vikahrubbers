@@ -3,10 +3,9 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import 'bootstrap/dist/js/bootstrap.bundle.min';
 import './Navbar.css';
 import { Link } from 'react-router-dom';
-import logo_leave from './images/logo_leave.png'; // Import your logo image
+import logo from './images/logo1.png';
 
 const Navbar = () => {
-
   useEffect(() => {
     window.scrollTo(0, 0);
   }, []);
@@ -20,13 +19,15 @@ const Navbar = () => {
   return (
     <nav className="navbar navbar-expand-lg navbar-light bg-light p-2">
       <div className="container">
-        <Link 
-          className="navbar-brand" 
-          to="/" 
-          onClick={() => setIsNavbarCollapsed(true)}
-        >
-          <img src={logo_leave} alt="VikahRubbers Logo" className="logo" />
-        </Link>
+        <Link className="navbar-brand" to="/" onClick={() => setIsNavbarCollapsed(true)}>
+  <img src={logo} alt="Logo" className="logo" />
+  <div className="brand-text">
+    <div className="brand-name">VIKAH RUBBERS</div>
+    <div className="brand-subtext">PVT LTD</div>
+  </div>
+</Link>
+
+
         <button
           className="navbar-toggler"
           type="button"
@@ -37,6 +38,7 @@ const Navbar = () => {
         >
           <span className="navbar-toggler-icon"></span>
         </button>
+
         <div className={`collapse navbar-collapse ${isNavbarCollapsed ? '' : 'show'}`} id="navbarNav">
           <ul className="navbar-nav ms-auto">
             <li className="nav-item mx-2">
@@ -80,7 +82,7 @@ const Navbar = () => {
             </li>
             <li className="nav-item mx-2">
               <Link className="nav-link nav-hover" to="/AskUs" onClick={() => setIsNavbarCollapsed(true)}>
-                AskUsForm
+                AskUs Form
               </Link>
             </li>
             <li className="nav-item mx-2">

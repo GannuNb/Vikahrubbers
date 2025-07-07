@@ -1,23 +1,54 @@
-/* === Logo Styling === */
+/* Logo Styling */
 .logo {
-  height: 65px; /* Default size */
-  width: auto;
+  height: 50px; /* Controls original navbar height */
+  transform: scale(2.8); /* Visually enlarge */
+  transform-origin: left center; /* Keeps logo aligned */
 }
 
-/* Responsive logo sizing */
 @media (min-width: 300px) and (max-width: 600px) {
   .logo {
-    height: 30px;
+    height: 40px;
+    transform: scale(2.8);
+  }
+    .brand-name{
+    font-size: 18px !important;
   }
 }
 
 @media (min-width: 600px) and (max-width: 1000px) {
   .logo {
-    height: 65px;
+    height: 45px;
+    transform: scale(2.8);
   }
+
 }
 
-/* === Text Branding (if used as fallback) === */
+/* Align logo + brand text horizontally */
+.navbar-brand {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+/* Brand text beside logo */
+.brand-text {
+  line-height: 1.2;
+  margin-left: 28%;
+  margin-top: 8%;
+}
+
+.brand-name {
+  font-weight: bold;
+  font-size: 22px;
+  color: #000;
+}
+
+.brand-subtext {
+  font-size: 14px;
+  color: #666;
+}
+
+/* Optional old text-based logo (if used elsewhere) */
 .text-logo {
   font-weight: 700;
   font-size: 2.5rem;
@@ -27,23 +58,23 @@
   letter-spacing: 1px;
 }
 
-/* === Navbar Links Hover Effects === */
+/* Hover color effect for navbar links */
 .nav-hover {
-  color: #333; /* Default color */
+  color: #333;
   transition: color 0.3s ease;
 }
 
 .nav-hover:hover {
-  color: #6a1b9a; /* Custom hover color */
+  color: #6a1b9a;
   text-decoration: none;
 }
 
-/* === Navbar Item Spacing === */
+/* Add spacing between navbar items */
 .navbar-nav .nav-item {
-  margin-right: 15px; /* Space between nav items */
+  margin-right: 15px;
 }
 
-/* === Dropdown Styling === */
+/* Dropdown item styling */
 .dropdown-item {
   color: #333;
   transition: color 0.3s ease;
@@ -51,5 +82,5 @@
 
 .dropdown-item:hover {
   color: #007bff;
-  background-color: #d29cf4; /* Light background on hover */
+  background-color: #d29cf4;
 }
