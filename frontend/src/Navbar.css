@@ -10,7 +10,8 @@
     height: 15px;
     transform: scale(2.8);
   }
-    .brand-name{
+
+  .brand-name {
     font-size: 18px !important;
   }
 }
@@ -20,7 +21,6 @@
     height: 20px;
     transform: scale(2.8);
   }
-
 }
 
 /* Align logo + brand text horizontally */
@@ -28,6 +28,14 @@
   display: flex;
   align-items: center;
   gap: 12px;
+  text-decoration: none;
+  color: inherit;
+  cursor: pointer;
+}
+
+/* Ensure brand text is also clickable */
+.navbar-brand * {
+  pointer-events: none;
 }
 
 /* Brand text beside logo */

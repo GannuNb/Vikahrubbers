@@ -156,7 +156,6 @@ const CrumbRubber = () => {
         <h2>Crumb Rubber Powder - 40 Mesh</h2>
 
         <section className="product-details">
-          <p><strong>Mesh Definition:</strong></p>
           <p>
             Mesh refers to material that has been sized by passing it through a screen with a specific number of holes per inch (25.4 mm). For instance, 40 mesh crumb rubber powder passes through a screen with 40 holes per inch, creating rubber granules that are slightly under 1/40th of an inch. The exact particle size can vary based on the wire thickness used in the screen.
           </p>

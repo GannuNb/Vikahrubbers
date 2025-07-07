@@ -4,7 +4,7 @@ import AOS from 'aos';
 import 'aos/dist/aos.css';
 import { Link } from 'react-router-dom';
 
-// Hero Images for Carousel
+// Hero Images
 import slide1 from './images/topimg.webp';
 import slide2 from './images/cr1.jpg';
 import slide3 from './images/epdmm.webp';
@@ -26,9 +26,9 @@ function Home() {
 
   return (
     <div className="home-container">
-      {/* Hero Carousel */}
+      {/* HERO */}
       <section className="hero">
-<div id="heroCarousel" className="carousel slide" data-bs-ride="carousel" data-bs-interval="4000">
+        <div id="heroCarousel" className="carousel slide" data-bs-ride="carousel" data-bs-interval="4000">
           <div className="carousel-inner">
             {[slide2, slide1, slide3].map((img, idx) => (
               <div key={idx} className={`carousel-item ${idx === 0 ? 'active' : ''}`}>
@@ -43,34 +43,31 @@ function Home() {
             <span className="carousel-control-next-icon"></span>
           </button>
         </div>
-
         <div className="hero-text">
           <h1>Innovating the Future of Rubber Recycling</h1>
           <p>Delivering Quality, Sustainability, and Performance</p>
         </div>
       </section>
 
-      {/* About Section */}
+      {/* ABOUT */}
       <section className="about" data-aos="fade-up">
-        <div className="section-header left">
-          <span className="bar"></span>
-          <h2>About Us</h2>
-        </div>
-        <div className="about-content">
-          <div className="about-text">
-            <p>
-              Vikah Rubbers located in Hanumakonda, Telangana, India is a renowned name among Rubber Industries.
-              At Vikah Rubbers, consistent quality of Rubber Crumb and Rubber Granules at various grades of Factice
-              are manufactured compliant with all requirements of relevant national standards and
-              tested as per prevalent internationally accepted test methods.
-            </p>
-            <Link to="/about" className="learn-more-button">Learn More</Link>
-          </div>
-          <img src={aboutImage} className="media" alt="About Us" />
-        </div>
-      </section>
+  <div className="about-content">
+    <div className="about-text">
+      <h2 className="section-title">About Us</h2> {/* ✅ Moved heading here */}
+      <p>
+        Vikah Rubbers located in Hanumakonda, Telangana, India is a renowned name among Rubber Industries.
+        At Vikah Rubbers, consistent quality of Rubber Crumb and Rubber Granules at various grades of Factice
+        are manufactured compliant with all requirements of relevant national standards and
+        tested as per prevalent internationally accepted test methods.
+      </p>
+      <Link to="/about" className="learn-more-button">Learn More</Link>
+    </div>
+    <img src={aboutImage} className="media" alt="About Us" />
+  </div>
+</section>
 
-      {/* Products Section */}
+
+      {/* PRODUCTS */}
       <section className="products" data-aos="fade-up">
         <div className="section-header center">
           <span className="bar"></span>
@@ -95,7 +92,7 @@ function Home() {
         </div>
       </section>
 
-      {/* Contact Section */}
+      {/* CONTACT */}
       <section className="contact" data-aos="fade-up">
         <div className="section-header center">
           <span className="bar"></span>
