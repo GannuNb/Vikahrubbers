@@ -1,0 +1,157 @@
+/* Base page styling */
+.contact-page {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #f9f6ff; /* very light violet tint */
+  min-height: 100vh;
+  margin: 0;
+  padding: 0;
+}
+
+/* Top full-width banner image */
+.top-banner {
+  width: 100%;
+  height: 400px;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  filter: brightness(0.9);
+  /* optional slight dark overlay */
+  position: relative;
+}
+
+/* Contact content section */
+.contact-content {
+  display: flex;
+  flex-wrap: wrap;
+  max-width: 1200px;
+  margin: 3rem auto;
+  padding: 0 2rem;
+  gap: 2rem;
+}
+
+/* Left text content */
+.contact-text {
+  flex: 1;
+  min-width: 280px;
+}
+
+.contact-text h2 {
+  font-size: 2.5rem;
+  color: #7b39ff; /* violet */
+  margin-bottom: 1rem;
+}
+
+.contact-text p {
+  font-size: 1.1rem;
+  color: #4a3e7b; /* dark violet/gray */
+  line-height: 1.6;
+  margin-bottom: 1.2rem;
+}
+
+.contact-text ul {
+  list-style: inside disc;
+  font-size: 1.1rem;
+  color: #4a3e7b;
+  line-height: 1.6;
+  padding-left: 0;
+  margin-bottom: 2rem;
+}
+
+/* Map container */
+.contact-map {
+  flex: 1;
+  min-width: 280px;
+}
+
+.contact-map h3 {
+  color: #7b39ff; /* violet */
+  font-size: 1.8rem;
+  margin-bottom: 1rem;
+}
+
+/* Stay Connected section */
+.contact-bottom-cta {
+  background-color: #f0e9ff; /* light violet */
+  margin: 3rem auto 4rem;
+  padding: 2.5rem 1.5rem;
+  max-width: 700px;
+  border-radius: 12px;
+  box-shadow: 0 4px 15px rgba(123, 57, 255, 0.15); /* violet shadow */
+  text-align: center;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.contact-bottom-cta h3 {
+  color: #7b39ff;
+  font-size: 2rem;
+  margin-bottom: 0.5rem;
+}
+
+.contact-bottom-cta p {
+  font-size: 1.1rem;
+  color: #4a3e7b;
+  margin-bottom: 1.5rem;
+}
+
+/* Subscribe form */
+.subscribe-form {
+  display: flex;
+  justify-content: center;
+  gap: 0.75rem;
+  flex-wrap: wrap;
+}
+
+.subscribe-form input[type="email"] {
+  padding: 0.7rem 1rem;
+  font-size: 1rem;
+  border: 2px solid #7b39ff; /* violet border */
+  border-radius: 6px;
+  width: 250px;
+  max-width: 100%;
+  outline-offset: 2px;
+  transition: border-color 0.3s ease;
+  color: #4a3e7b;
+  background-color: #fff;
+}
+
+.subscribe-form input[type="email"]:focus {
+  border-color: #531dbb; /* darker violet */
+  outline: none;
+}
+
+/* Button */
+.subscribe-form button {
+  padding: 0.7rem 1.5rem;
+  background-color: #7b39ff; /* violet */
+  border: none;
+  border-radius: 6px;
+  color: white;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  box-shadow: 0 3px 8px rgba(123, 57, 255, 0.4);
+}
+
+.subscribe-form button:hover {
+  background-color: #531dbb; /* darker violet */
+  box-shadow: 0 6px 12px rgba(83, 29, 187, 0.5);
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .contact-content {
+    flex-direction: column;
+    padding: 0 1rem;
+  }
+
+  .contact-text, .contact-map {
+    width: 100%;
+  }
+
+  .contact-text h2 {
+    text-align: center;
+  }
+  .top-banner{
+    height: 275px;
+  }
+}

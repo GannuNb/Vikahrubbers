@@ -1,0 +1,124 @@
+/* Full width container */
+.full-width-container {
+  width: 100vw;
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+  color: #2c3e50;
+}
+
+/* Hero image full width */
+.hero-image .abtimg {
+  width: 100vw;
+  max-height: 600px;
+  object-fit: cover;
+  border-radius: 0;
+  margin: 0;
+}
+
+/* Section styling with max width for readability */
+.intro-section,
+.production-process,
+.applications,
+.product-description,
+.product-info {
+  margin-bottom: 4rem;
+  max-width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 0 1rem;
+}
+
+.products-heading {
+  font-weight: 700;
+  font-size: 2rem;
+  margin-bottom: 1rem;
+  color: #1a1a1a;
+}
+
+/* Applications grid layout */
+.app-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 2rem;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 1rem;
+}
+
+.app-grid h5 {
+  margin-bottom: 0.5rem;
+  color: #2c3e50;
+}
+
+.app-grid ul {
+  padding-left: 1.25rem;
+  list-style-type: disc;
+}
+
+/* Centered images - large */
+.centered-images {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 2rem;
+  max-width: 1200px;
+  margin: 0 auto 3rem;
+  padding: 0 1rem;
+}
+
+.centered-img {
+  width: 100%;
+  max-width: 600px;
+  height: auto;
+  border-radius: 6px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.12);
+}
+
+/* Centered images - smaller */
+.small-images {
+  max-width: 1200px;
+  margin: 0 auto 3rem;
+  padding: 0 1rem;
+}
+
+.small-centered-img {
+  width: 100%;
+  max-width: 400px;
+  height: auto;
+  border-radius: 6px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.12);
+}
+
+/* Product info styling */
+.product-info .product-details,
+.product-info .product-description {
+  margin-bottom: 1.5rem;
+}
+
+/* Responsive styles */
+@media (max-width: 600px) {
+  .hero-image .abtimg {
+    max-height: 250px;
+    width: 100vw;
+  }
+
+  .app-grid {
+    grid-template-columns: 1fr;
+    padding: 0 1rem;
+  }
+
+  .centered-img,
+  .small-centered-img {
+    max-width: 100%;
+  }
+
+  .intro-section,
+  .production-process,
+  .applications,
+  .product-description,
+  .product-info {
+    max-width: 100%;
+    margin-bottom: 3rem;
+    padding: 0 1rem;
+  }
+}

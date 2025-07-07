@@ -1,0 +1,55 @@
+/* === Logo Styling === */
+.logo {
+  height: 65px; /* Default size */
+  width: auto;
+}
+
+/* Responsive logo sizing */
+@media (min-width: 300px) and (max-width: 600px) {
+  .logo {
+    height: 30px;
+  }
+}
+
+@media (min-width: 600px) and (max-width: 1000px) {
+  .logo {
+    height: 65px;
+  }
+}
+
+/* === Text Branding (if used as fallback) === */
+.text-logo {
+  font-weight: 700;
+  font-size: 2.5rem;
+  color: #333;
+  text-decoration: none;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  letter-spacing: 1px;
+}
+
+/* === Navbar Links Hover Effects === */
+.nav-hover {
+  color: #333; /* Default color */
+  transition: color 0.3s ease;
+}
+
+.nav-hover:hover {
+  color: #6a1b9a; /* Custom hover color */
+  text-decoration: none;
+}
+
+/* === Navbar Item Spacing === */
+.navbar-nav .nav-item {
+  margin-right: 15px; /* Space between nav items */
+}
+
+/* === Dropdown Styling === */
+.dropdown-item {
+  color: #333;
+  transition: color 0.3s ease;
+}
+
+.dropdown-item:hover {
+  color: #007bff;
+  background-color: #d29cf4; /* Light background on hover */
+}

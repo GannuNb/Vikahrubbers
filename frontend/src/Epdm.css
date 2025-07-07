@@ -1,0 +1,139 @@
+/* Reset some margins and full width */
+.epdm-page {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  color: #222;
+  max-width: 100vw;
+  overflow-x: hidden;
+  background: #f9f9f9;
+  padding-bottom: 3rem;
+}
+
+/* Hero banner with overlay text */
+.hero-banner {
+  position: relative;
+  width: 100vw;
+  max-height: 400px;
+  overflow: hidden;
+  margin-bottom: 2rem;
+}
+
+.hero-banner img {
+  width: 100%;
+  height: 400px;
+  object-fit: cover;
+  filter: brightness(0.85);
+}
+
+
+.hero-text h1 {
+  font-size: 3rem;
+  margin-bottom: 0.5rem;
+}
+
+.hero-text p {
+  font-size: 1.25rem;
+  font-weight: 600;
+}
+
+/* Info split section */
+.info-split {
+  display: flex;
+  gap: 2rem;
+  margin-bottom: 3rem;
+  padding: 0 1rem;
+  max-width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.info-text {
+  flex: 1;
+  font-size: 1.15rem;
+  line-height: 1.6;
+  color: #333;
+}
+
+.info-image {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.info-image img {
+  max-width: 100%;
+  max-height: 350px;
+  border-radius: 10px;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+}
+
+/* Cards Section */
+.cards-section {
+  display: flex;
+  gap: 2rem;
+  margin-bottom: 3rem;
+  padding: 0 1rem;
+  max-width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.card {
+  background: #fff;
+  padding: 2rem;
+  flex: 1;
+  border-radius: 10px;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.05);
+}
+
+.card h2 {
+  margin-bottom: 1rem;
+  color: #0a4a87;
+  font-weight: 700;
+}
+
+.card ul {
+  list-style-type: disc;
+  padding-left: 1.5rem;
+  color: #555;
+}
+
+.card p {
+  color: #555;
+  line-height: 1.5;
+}
+
+/* Gallery grid */
+.gallery {
+  display: grid;
+  grid-template-columns: repeat(auto-fit,minmax(280px,1fr));
+  gap: 1.5rem;
+  padding: 0 1rem;
+  max-width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.gallery-item img {
+  width: 100%;
+  height: 220px;
+  object-fit: cover;
+  border-radius: 8px;
+  box-shadow: 0 3px 8px rgba(0,0,0,0.1);
+  transition: transform 0.3s ease;
+}
+
+.gallery-item img:hover {
+  transform: scale(1.05);
+}
+
+/* Responsive */
+@media (max-width: 900px) {
+  .info-split, .cards-section {
+    flex-direction: column;
+  }
+  .hero-text h1 {
+    font-size: 2.2rem;
+  }
+}
+
