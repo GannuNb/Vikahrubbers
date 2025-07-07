@@ -39,10 +39,6 @@
   background-color: #f7f7f7;
 }
 
-.section-card.alt {
-  background-color: #ffffff;
-}
-
 .card-content {
   display: flex;
   flex-wrap: wrap;
