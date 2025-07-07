@@ -25,7 +25,7 @@ const About = () => {
           <div className="card-text">
             <h2>Who We Are</h2>
             <p>
-              At Vikah Rubbers, based in Kodad, Telangana, we lead the way in rubber recycling and manufacturing. Our expert team transforms discarded rubber into premium-quality crumb and EPDM granules that meet the highest industry standards.
+              At Vikah Rubbers, based in Hanumakonda, Telangana, we lead the way in rubber recycling and manufacturing. Our expert team transforms discarded rubber into premium-quality crumb and EPDM granules that meet the highest industry standards.
             </p>
             <p>
               With decades of combined experience, our operations serve diverse industries such as automotive tyres, conveyor belts, sports flooring, and molded rubber products — both in India and internationally.

@@ -43,10 +43,19 @@ const ContactUs = () => {
       <div className="contact-content">
         <div className="contact-text">
           <h2>Contact Us</h2>
-          <p><strong>Admin Office:</strong><br />
-            #406, 4th Floor, Patel Towers, Above EasyBuy, Beside Nagole RTO Office, <br />
-            Nagole, Hyderabad, Telangana - 500068
-          </p>
+          <p className="mb-3"><strong>VIKAH RUBBERS PRIVATE LIMITED</strong></p>
+
+<p><strong>Admin Office:</strong><br />
+  #406, 4th Floor, Patel Towers, Above EasyBuy, Beside Nagole RTO Office,<br />
+  Nagole, Hyderabad, Telangana - 500068
+</p>
+
+<p><strong>Factory Address:</strong><br />
+  Shed No.1 in Plot No.14 (Site - A), IP Rampur,<br />
+  Kazipet Mandal, Hanumakonda Dist,<br />
+  Telangana - 506151
+</p>
+
           <p><strong>Phone:</strong> +91 4049471616</p>
           <p><strong>Email:</strong> <a href="mailto:info@vikahrubbers.com" style={{ textDecoration: 'none' }}>info@vikahrubbers.com</a></p>
 
