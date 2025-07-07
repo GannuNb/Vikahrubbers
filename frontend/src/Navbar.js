@@ -3,7 +3,7 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import 'bootstrap/dist/js/bootstrap.bundle.min';
 import './Navbar.css';
 import { Link } from 'react-router-dom';
-import logo from './images/logo1.png';
+import logo from './images/logo_leave.png';
 
 const Navbar = () => {
   useEffect(() => {

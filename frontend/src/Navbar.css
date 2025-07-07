@@ -1,13 +1,13 @@
 /* Logo Styling */
 .logo {
-  height: 50px; /* Controls original navbar height */
+  height: 28px; /* Controls original navbar height */
   transform: scale(2.8); /* Visually enlarge */
   transform-origin: left center; /* Keeps logo aligned */
 }
 
 @media (min-width: 300px) and (max-width: 600px) {
   .logo {
-    height: 40px;
+    height: 15px;
     transform: scale(2.8);
   }
     .brand-name{
@@ -17,7 +17,7 @@
 
 @media (min-width: 600px) and (max-width: 1000px) {
   .logo {
-    height: 45px;
+    height: 20px;
     transform: scale(2.8);
   }
 
