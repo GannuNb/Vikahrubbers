@@ -23,7 +23,7 @@ const Navbar = () => {
           <img src={logo} alt="Logo" className="logo" />
           <div className="brand-text">
             <div className="brand-name">VIKAH RUBBERS</div>
-            <div className="brand-subtext">PVT LTD</div>
+            <div className="brand-subtext">PRIVATE LIMITED</div>
           </div>
         </Link>
 

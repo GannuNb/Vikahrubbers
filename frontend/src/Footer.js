@@ -8,14 +8,15 @@ const Footer = () => {
     <footer className="custom-footer pt-5 pb-3">
       <div className="container">
         <div className="row text-start">
-          
+
           {/* ABOUT US */}
           <div className="col-md-3 mb-4">
             <h5 className="footer-heading mb-3">ABOUT US</h5>
             <div className="footer-line mb-3"></div>
-            <p className="footer-text small">
-              VikahRubbers located in Hanumakonda, Telangana, India is a renowned name among Rubber Industries. At VikahRubbers, consistent quality of Rubber Crumb and Rubber Granules at various grades of Factice are manufactured compliant with all requirements of relevant national standards and tested as per prevalent internationally accepted test methods.
+            <p className="footer-text small text-white">
+              <strong style={{ color: 'white' }}>VIKAH RUBBERS PVT LTD</strong> located in Hanumakonda, Telangana, India is a renowned name among Rubber Industries. At VikahRubbers, consistent quality of Rubber Crumb and Rubber Granules at various grades of Factice are manufactured compliant with all requirements of relevant national standards and tested as per prevalent internationally accepted test methods.
             </p>
+
           </div>
 
           {/* QUICK LINKS */}

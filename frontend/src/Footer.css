@@ -9,12 +9,14 @@
   font-size: 1.1rem;
   font-weight: 700;
   text-transform: uppercase;
+  margin-bottom: 1rem;
 }
 
 .custom-footer .footer-line {
   width: 40px;
   height: 3px;
   background-color: #ffcc00;
+  margin-bottom: 1rem;
 }
 
 .custom-footer .footer-text {
@@ -24,39 +26,73 @@
   background-color: transparent !important;
 }
 
+.custom-footer a {
+  text-decoration: none !important;
+}
+
+.custom-footer a:hover {
+  text-decoration: none !important;
+}
+
+/* Footer links */
 .custom-footer .footer-link {
   color: #fff !important;
-  text-decoration: none;
   transition: color 0.3s ease;
 }
 
 .custom-footer .footer-link:hover {
   color: #ffcc00 !important;
-  text-decoration: underline;
 }
 
+/* Email link */
 .custom-footer .footer-email {
   color: #ffcc00 !important;
-  text-decoration: none;
+  font-weight: 500;
 }
 
 .custom-footer .footer-email:hover {
-  text-decoration: underline;
   color: #fff !important;
 }
 
+/* Footer bottom */
 .custom-footer .footer-bottom {
   border-top: 1px solid #555;
   color: #ccc;
+  padding-top: 1rem;
+  margin-top: 2rem;
+  font-size: 0.85rem;
 }
 
-/* Social icons override */
+/* Social icons */
 .custom-footer .btn-outline-light {
-  border-color: #fff;
-  color: #fff;
+  border-color: #fff !important;
+  color: #fff !important;
+  font-size: 0.9rem;
+  padding: 0.4rem 0.6rem;
 }
 
 .custom-footer .btn-outline-light:hover {
-  background-color: #ffcc00;
-  color: #000;
+  background-color: #ffcc00 !important;
+  color: #000 !important;
+  border-color: #ffcc00 !important;
+}
+
+/* Responsive tweaks */
+@media (max-width: 576px) {
+  .custom-footer .footer-heading {
+    font-size: 1rem;
+  }
+
+  .custom-footer .footer-line {
+    width: 30px;
+    height: 2px;
+  }
+
+  .custom-footer .footer-text {
+    font-size: 0.88rem;
+  }
+
+  .custom-footer .footer-bottom {
+    font-size: 0.75rem;
+  }
 }

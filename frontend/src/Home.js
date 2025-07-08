@@ -54,12 +54,14 @@ function Home() {
         <div className="about-content">
           <div className="about-text">
             <h2 className="section-title">About Us</h2>
-            <p>
-              Vikah Rubbers located in Hanumakonda, Telangana, India is a renowned name among Rubber Industries.
-              At Vikah Rubbers, consistent quality of Rubber Crumb and Rubber Granules at various grades of Factice
-              are manufactured compliant with all requirements of relevant national standards and
-              tested as per prevalent internationally accepted test methods.
-            </p>
+<p>
+  <strong style={{ color: 'black', fontWeight: 'bold' }}>VIKAH RUBBERS</strong> located in Hanumakonda, Telangana, India is a renowned name among Rubber Industries.
+  At <strong style={{ color: 'black', fontWeight: 'bold' }}>VIKAH RUBBERS</strong>, consistent quality of Rubber Crumb and Rubber Granules at various grades of Factice
+  are manufactured compliant with all requirements of relevant national standards and
+  tested as per prevalent internationally accepted test methods.
+</p>
+
+
             <Link to="/about" className="learn-more-button">Learn More</Link>
           </div>
           <img src={aboutImage} className="media" alt="About Us" />
