@@ -2,7 +2,7 @@
 .full-width-container {
   width: 100vw;
   box-sizing: border-box;
-  font-family: 'Segoe UI', sans-serif;
+  font-family: 'Inter', sans-serif;
   color: #333;
   background-color: #f9f9f9;
 }
@@ -32,17 +32,24 @@
 /* Headings */
 .products-heading,
 h2 {
+  font-family: 'Cinzel', serif;
   font-weight: 700;
   font-size: 2.3rem;
   color: #6a1b9a;
   margin-bottom: 1rem;
   padding-left: 10px;
+  letter-spacing: 1px;
+  text-transform: uppercase;
 }
 
 /* Paragraphs */
-p {
+p,
+ul li {
+  font-family: 'Inter', sans-serif;
   font-size: 1.05rem;
   line-height: 1.8;
+  letter-spacing: 0.4px;
+  color: #333;
 }
 
 /* Application grid */
@@ -56,9 +63,12 @@ p {
 
 .app-grid h5 {
   margin-bottom: 0.5rem;
+  font-family: 'Cinzel', serif;
+  font-size: 1.3rem;
+  font-weight: 700;
   color: #2e3192;
-  font-size: 1.2rem;
   text-transform: uppercase;
+  letter-spacing: 0.8px;
 }
 
 .app-grid ul {

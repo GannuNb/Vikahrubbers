@@ -75,11 +75,24 @@
   margin-bottom: 2rem;
 }
 
-.section-header h2 {
-  font-size: 2rem;
-  font-weight: bold;
-  color: #4e148c;
+.section-title {
+  font-family: 'Cinzel', serif;
+  font-size: 2.5rem;
+  font-weight: 700;
+  color: #6a1b9a;
+  letter-spacing: 1px;
+  text-transform: uppercase;
 }
+
+.section-header h2 {
+  font-family: 'Cinzel', serif;
+  font-size: 2.5rem;
+  font-weight: 700;
+  color: #6a1b9a;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+}
+
 
 /* --------------------------- */
 /* ABOUT SECTION               */
@@ -300,4 +313,25 @@
   .contact-text {
     text-align: center;
   }
+}
+
+/* Generic Paragraph / Description Styling */
+.about-text p,
+.contact-text p,
+.product-card h3,
+.product-card p {
+  font-family: 'Inter', sans-serif;
+  font-size: 1rem;
+  line-height: 1.7;
+  color: #333;
+  letter-spacing: 0.3px;
+}
+
+/* Optional: refine text links/buttons for better harmony */
+.learn-more-button,
+.product-learn-btn,
+.enquire-button {
+  font-family: 'Inter', sans-serif;
+  font-weight: 500;
+  letter-spacing: 0.5px;
 }

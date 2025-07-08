@@ -5,6 +5,11 @@
   transform-origin: left center; /* Keeps logo aligned */
 }
 
+.brand-name,.brand-subtext {
+  font-family: 'Times New Roman', Times, serif
+}
+
+
 @media (min-width: 300px) and (max-width: 600px) {
   .logo {
     height: 15px;
@@ -41,13 +46,13 @@
 /* Brand text beside logo */
 .brand-text {
   line-height: 1.2;
-  margin-left: 28%;
-  margin-top: 8%;
+  margin-left: 22%;
+  margin-top: 2%;
 }
 
 .brand-name {
   font-weight: bold;
-  font-size: 22px;
+  font-size: 35px;
   color: #6a1b9a;
 }
 
@@ -91,4 +96,16 @@
 .dropdown-item:hover {
   color: #007bff;
   background-color: #d29cf4;
+}
+
+.nav-link {
+  font-family: 'Roboto', sans-serif;
+  font-weight: 400;
+  letter-spacing: 0.5px;
+  color: #555; /* subtle gray */
+}
+
+.nav-link.active {
+  font-weight: 700;
+  color: #000; /* black for active */
 }

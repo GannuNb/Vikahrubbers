@@ -45,16 +45,16 @@ const ContactUs = () => {
           <h2>Contact Us</h2>
           <p className="mb-3"><strong>VIKAH RUBBERS PRIVATE LIMITED</strong></p>
 
-<p><strong>Admin Office:</strong><br />
-  #406, 4th Floor, Patel Towers, Above EasyBuy, Beside Nagole RTO Office,<br />
-  Nagole, Hyderabad, Telangana - 500068
-</p>
+          <p><strong>Admin Office:</strong><br />
+            #406, 4th Floor, Patel Towers, Above EasyBuy, Beside Nagole RTO Office,<br />
+            Nagole, Hyderabad, Telangana - 500068
+          </p>
 
-<p><strong>Factory Address:</strong><br />
-  Shed No.1 in Plot No.14 (Site - A), IP Rampur,<br />
-  Kazipet Mandal, Hanumakonda Dist,<br />
-  Telangana - 506151
-</p>
+          <p><strong>Unit Address:</strong><br />
+            Shed No.1 in Plot No.14 (Site - A), IP Rampur,<br />
+            Kazipet Mandal, Hanumakonda Dist,<br />
+            Telangana - 506151
+          </p>
 
           <p><strong>Phone:</strong> +91 4049471616</p>
           <p><strong>Email:</strong> <a href="mailto:info@vikahrubbers.com" style={{ textDecoration: 'none' }}>info@vikahrubbers.com</a></p>
@@ -67,17 +67,43 @@ const ContactUs = () => {
         </div>
 
         <div className="contact-map">
-          <h3>Find Us on Map</h3>
-          <iframe
-            title="Google Map"
-            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3049.299318499121!2d78.5549449239801!3d17.368280153357624!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bcb99eeab8a7795%3A0x89760778e2498478!2sPatel%20Towers!5e1!3m2!1sen!2sin!4v1749105069085!5m2!1sen!2sin"
-            width="100%"
-            height="400"
-            allowFullScreen=""
-            loading="lazy"
-            style={{ border: 0, borderRadius: '12px', boxShadow: '0 4px 16px rgba(0,0,0,0.1)' }}
-          />
+          <h3>Find Us on Maps</h3>
+
+          {/* Patel Towers Location */}
+          <div style={{ marginBottom: '24px' }}>
+            <iframe
+              title="Patel Towers Location"
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3049.299318499121!2d78.5549449239801!3d17.368280153357624!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bcb99eeab8a7795%3A0x89760778e2498478!2sPatel%20Towers!5e1!3m2!1sen!2sin!4v1749105069085!5m2!1sen!2sin"
+              width="100%"
+              height="250"
+              allowFullScreen=""
+              loading="lazy"
+              style={{
+                border: 0,
+                borderRadius: '12px',
+                boxShadow: '0 4px 16px rgba(0,0,0,0.1)'
+              }}
+            />
+          </div>
+
+          {/* SSR Granites Location */}
+          <div>
+            <iframe
+              title="SSR Granites Rampur Warangal"
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d24317.440351934652!2d79.43055189200328!3d17.9371379450896!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3a334d77001acf77%3A0xa4a485b74a807ba5!2sSSR%20GRANITES%20RAMPUR%20WARANGAL!5e1!3m2!1sen!2sin!4v1751951093868!5m2!1sen!2sin"
+              width="100%"
+              height="250"
+              allowFullScreen=""
+              loading="lazy"
+              style={{
+                border: 0,
+                borderRadius: '12px',
+                boxShadow: '0 4px 16px rgba(0,0,0,0.1)'
+              }}
+            />
+          </div>
         </div>
+
       </div>
 
       <div className="contact-bottom-cta">

@@ -20,12 +20,12 @@ const Navbar = () => {
     <nav className="navbar navbar-expand-lg navbar-light bg-light p-2">
       <div className="container">
         <Link className="navbar-brand" to="/" onClick={() => setIsNavbarCollapsed(true)}>
-  <img src={logo} alt="Logo" className="logo" />
-  <div className="brand-text">
-    <div className="brand-name">VIKAH RUBBERS</div>
-    <div className="brand-subtext">PVT LTD</div>
-  </div>
-</Link>
+          <img src={logo} alt="Logo" className="logo" />
+          <div className="brand-text">
+            <div className="brand-name">VIKAH RUBBERS</div>
+            <div className="brand-subtext">PVT LTD</div>
+          </div>
+        </Link>
 
 
         <button

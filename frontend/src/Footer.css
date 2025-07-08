@@ -1,5 +1,62 @@
-.footer-line {
+.custom-footer {
+  background-color: #111;
+  color: #fff !important;
+  font-family: 'Segoe UI', sans-serif;
+}
+
+.custom-footer .footer-heading {
+  color: #fff;
+  font-size: 1.1rem;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+.custom-footer .footer-line {
   width: 40px;
   height: 3px;
   background-color: #ffcc00;
+}
+
+.custom-footer .footer-text {
+  color: #eee !important;
+  font-size: 0.92rem;
+  line-height: 1.6;
+  background-color: transparent !important;
+}
+
+.custom-footer .footer-link {
+  color: #fff !important;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.custom-footer .footer-link:hover {
+  color: #ffcc00 !important;
+  text-decoration: underline;
+}
+
+.custom-footer .footer-email {
+  color: #ffcc00 !important;
+  text-decoration: none;
+}
+
+.custom-footer .footer-email:hover {
+  text-decoration: underline;
+  color: #fff !important;
+}
+
+.custom-footer .footer-bottom {
+  border-top: 1px solid #555;
+  color: #ccc;
+}
+
+/* Social icons override */
+.custom-footer .btn-outline-light {
+  border-color: #fff;
+  color: #fff;
+}
+
+.custom-footer .btn-outline-light:hover {
+  background-color: #ffcc00;
+  color: #000;
 }

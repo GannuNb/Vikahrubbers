@@ -14,7 +14,7 @@ const About = () => {
       {/* Hero Section */}
       <section className="hero-half" style={{ backgroundImage: `url(${abtimg3})` }}>
         <div className="hero-content">
-          <h1>Vikah Rubbers</h1>
+          <h1>VIKAH RUBBERS PVT LTD</h1>
           <p>Reimagining Rubber. Responsibly.</p>
         </div>
       </section>
