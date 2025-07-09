@@ -14,9 +14,14 @@ const CrumbRubber = () => {
 
   return (
     <main className="full-width-container">
-      <section className="hero-image">
-        <img src={abtimg} alt="Company products" className="abtimg" />
-      </section>
+      <section className="hero-banner">
+  <img src={abtimg} alt="Crumb Rubber Production" />
+  <div className="hero-text">
+    <h1>Crumb Rubber</h1>
+    <p>High-quality rubber granules made from recycled tires for versatile industrial use</p>
+  </div>
+</section>
+
 
       <section className="intro-section">
         <h2 className="products-heading mt-5">Crumb Rubber</h2>
