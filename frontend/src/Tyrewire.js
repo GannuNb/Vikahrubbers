@@ -1,6 +1,6 @@
 import React, { useEffect } from 'react';
 import './Tyrewire.css';
-import abtimg from './images/tw4.jpg';
+import abtimg from './images/twnew.jpg';
 import tw1 from './images/tw1.jpg';
 import tw2 from './images/tw2.webp';
 
@@ -30,6 +30,11 @@ const Tyrewire = () => {
         <h2 className="mb-3">Importance of Tyre Wire Scrap Recycling</h2>
         <p className="mb-4">
           Recycling tyre wire helps reduce environmental pollution by recovering steel that can be reused in various industries. This not only saves natural resources but also reduces landfill waste and lowers the carbon footprint associated with steel production.
+        </p>
+
+        {/* New highlighted sentence with 7200 tons */}
+        <p className="fs-5 fw-semibold text-primary mb-5">
+          We process approximately 7,200 tons of tyre wire scrap annually as part of our recycling operations.
         </p>
 
         {/* Image Gallery */}

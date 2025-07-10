@@ -48,8 +48,8 @@ const Footer = () => {
             <h5 className="footer-heading mb-3">ADDRESS</h5>
             <div className="footer-line mb-3"></div>
             <p className="footer-text small fw-bold mb-1">VIKAH RUBBERS PRIVATE LIMITED</p>
-            <p className="footer-text small mb-1"><strong>ADMIN OFF:</strong> #406, 4th Floor, Patel Towers, Above EasyBuy, Beside Nagole RTO Office, Nagole, Hyderabad, Telangana - 500068</p>
-            <p className="footer-text small mb-1"><strong>Unit Address:</strong> Shed No.1 in Plot No.14 (Site - A), IP Rampur, Kazipet Mandal, Hanumakonda Dist, Telangana - 506151</p>
+            <p className="footer-text small mb-3"><strong>ADMIN OFF:</strong> #406, 4th Floor, Patel Towers, Above EasyBuy, Beside Nagole RTO Office, Nagole, Hyderabad, Telangana - 500068</p>
+            <p className="footer-text small mb-3"><strong>Unit Address:</strong> Shed No.1 in Plot No.14 (Site - A), IP Rampur, Kazipet Mandal, Hanumakonda Dist, Telangana - 506151</p>
             <p className="footer-text small mb-1"><strong>Phone:</strong> +91 4049471616</p>
             <p className="footer-text small mb-1"><strong>Mobile:</strong> +91 8886789356</p>
             <p className="footer-text small mb-3">

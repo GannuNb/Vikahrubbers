@@ -29,7 +29,7 @@ const CrumbRubber = () => {
           Crumb rubber is made by reducing scrap tires into small, uniform granules. Inherent reinforcing materials, such as steel and fiber, are removed, along with other types of inert contaminants, such as dust, glass, or rock.
         </p>
         <p>
-          Lakshmi Ganapathi Industries has the nationwide capacity to produce more than 52,000 tonnes of crumb rubber annually for a wide variety of commercial applications.
+          <strong>VIKAH RUBBERS Pvt Ltd</strong> has the nationwide capacity to produce more than 52,000 tonnes of crumb rubber annually for a wide variety of commercial applications.
         </p>
       </section>
 
@@ -42,18 +42,18 @@ const CrumbRubber = () => {
           The chips are fed into a granulator that breaks them into small pieces while removing steel and fiber in the process. Any remaining steel is removed magnetically and fiber through a combination of shaking screens and wind sifters. Finer rubber particles can be obtained through further grinding in secondary granulators and high-speed rotary mills.
         </p>
         <p>
-          Ambient grinding is the production process used by the majority of crumb producers. The machines most commonly used for fine grinding in ambient plants are:
+          The machines most commonly we use were :
         </p>
         <ul>
-          <li><strong>Secondary Granulators</strong></li>
-          <li><strong>High-Speed Rotary Mills</strong></li>
-          <li><strong>Extruders or Screw Presses</strong></li>
-          <li><strong>Cracker Mills</strong></li>
+          <li><strong>Primary shredder</strong></li>
+          <li><strong>secondary shredder</strong></li>
+          <li><strong>Granulators</strong></li>
+          <li><strong>Grinding Mills</strong></li>
         </ul>
       </section>
 
       <section className="applications">
-        <h2>Applications for Crumb Rubber Granules</h2>
+        <h2>Applications for Rubber Granules / Crumb</h2>
 
         <div className="app-grid">
           <div>

@@ -1,8 +1,8 @@
 import React from 'react';
-import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import { HashRouter as Router, Routes, Route } from 'react-router-dom';  // Updated line
 import Home from './Home';
 import Navbar from './Navbar';
-import Footer from './Footer';      // import Footer here
+import Footer from './Footer';
 import About from './About';
 import AskUsForm from './AskUsForm';
 import ContactUs from './ContactUs';
@@ -16,7 +16,7 @@ import 'bootstrap/dist/js/bootstrap.bundle.min.js';
 
 function App() {
   return (
-    <Router>
+    <Router>  {/* Using HashRouter here */}
       <Navbar />
       <Routes>
         <Route path="/" element={<Home />} />
@@ -28,7 +28,7 @@ function App() {
         <Route path="/Epdm" element={<Epdm />} />
         <Route path="/TyreWire" element={<Tyrewire />} />
       </Routes>
-      <Footer /> {/* Render footer here */}
+      <Footer />
     </Router>
   );
 }
