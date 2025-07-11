@@ -89,18 +89,18 @@ const ContactUs = () => {
           {/* SSR Granites Location */}
           <div>
             <iframe
-  title="SSR Granites Rampur Warangal"
-  src="https://www.google.com/maps?q=17.9371379450896,79.43055189200328&z=15&output=embed"
-  width="100%"
-  height="250"
-  allowFullScreen=""
-  loading="lazy"
-  style={{
-    border: 0,
-    borderRadius: '12px',
-    boxShadow: '0 4px 16px rgba(0,0,0,0.1)'
-  }}
-/>
+              title="SSR Granites Rampur Warangal"
+              src="https://www.google.com/maps?q=17.9371379450896,79.43055189200328&z=15&output=embed"
+              width="100%"
+              height="250"
+              allowFullScreen=""
+              loading="lazy"
+              style={{
+                border: 0,
+                borderRadius: '12px',
+                boxShadow: '0 4px 16px rgba(0,0,0,0.1)'
+              }}
+            />
 
           </div>
         </div>
