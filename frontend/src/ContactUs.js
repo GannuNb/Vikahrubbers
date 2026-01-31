@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from 'react';
+import { Helmet } from "react-helmet";
 import abtimg from './images/combo2.png';
 import './ContactUs.css';
 
@@ -38,6 +39,24 @@ const ContactUs = () => {
 
   return (
     <div className="contact-page">
+
+      {/* 🌐 SEO HELMET */}
+      <Helmet>
+        <title>Contact Us | Vikah Rubbers Pvt Ltd</title>
+
+        <meta
+          name="description"
+          content="Get in touch with Vikah Rubbers Pvt Ltd. Reach our Admin Office in Hyderabad or Unit Office in Hanumakonda. Contact for enquiries on rubber recycling, crumb rubber, and EPDM granules."
+        />
+
+        <meta
+          name="keywords"
+          content="Vikah Rubbers contact, rubber recycling Telangana, crumb rubber suppliers, EPDM granules manufacturers, rubber factory contact India"
+        />
+
+        <link rel="canonical" href="https://vikahrubbers.com/ContactUs" />
+      </Helmet>
+      
       <div className="top-banner" style={{ backgroundImage: `url(${abtimg})` }} />
 
       <div className="contact-content">
@@ -51,7 +70,8 @@ const ContactUs = () => {
           </p>
 
           <p><strong>Unit Address:</strong><br />
-            Shed No.1 in Plot No. 14 (site-A),IP Rampur, Kazipet Mandal, Hanumakonda<br />
+            Shed No.1 in Plot No.14 (Site - A), IP Rampur,<br />
+            Kazipet Mandal, Hanumakonda Dist,<br />
             Telangana - 506151
           </p>
 
@@ -89,10 +109,7 @@ const ContactUs = () => {
           <div>
             <iframe
               title="SSR Granites Rampur Warangal"
-
-              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2357.466499610935!2d79.46280399214817!3d17.94757037314131!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3a33537643652aeb%3A0xf82bde918a1fc2da!2sPrime%20India%20Recycling%20Centre!5e1!3m2!1sen!2sin!4v1766121514439!5m2!1sen!2sin" 
-
-
+              src="https://www.google.com/maps?q=17.9371379450896,79.43055189200328&z=15&output=embed"
               width="100%"
               height="250"
               allowFullScreen=""

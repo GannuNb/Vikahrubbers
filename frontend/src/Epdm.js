@@ -1,4 +1,5 @@
 import React, { useEffect } from 'react';
+import { Helmet } from 'react-helmet';
 import './Epdm.css';
 import abtimg from './images/epdmm.webp';
 import epdm1 from './images/epdm1.jpeg';
@@ -11,13 +12,45 @@ const Epdm = () => {
     window.scrollTo(0, 0);
   }, []);
 
+  const structuredData = {
+    "@context": "https://schema.org",
+    "@type": "Product",
+    "name": "EPDM Colored Rubber Granules",
+    "description": "Durable, UV resistant EPDM rubber granules ideal for sports fields, playgrounds, and other versatile surfaces.",
+    "brand": {
+      "@type": "Organization",
+      "name": "Vikah Rubbers"
+    },
+    "material": "EPDM Rubber",
+    "url": "https://vikahrubbers.com/Epdm"
+  };
+
   return (
     <main className="epdm-page">
+      {/* SEO Helmet */}
+      <Helmet>
+        <title>EPDM Colored Rubber Granules | Vikah Rubbers</title>
+        <meta
+          name="description"
+          content="Durable, UV resistant EPDM rubber granules, perfect for sports fields, playgrounds, commercial flooring, and versatile applications."
+        />
+        <meta
+          name="keywords"
+          content="EPDM Rubber, Colored Rubber Granules, Sports Flooring, Playground Surfaces, Vikah Rubbers"
+        />
+        <meta name="robots" content="index, follow" />
+        <link rel="canonical" href="https://vikahrubbers.com/Epdm" />
+
+        {/* Structured Data */}
+        <script type="application/ld+json">
+          {JSON.stringify(structuredData)}
+        </script>
+      </Helmet>
 
       {/* Hero Banner */}
       <header className="hero-banner">
-        <img src={abtimg} alt="Company products" />
-        <div className="hero-text">
+        <img src={abtimg} alt="EPDM Colored Rubber Granules" className="img-fluid w-100" />
+        <div className="hero-text text-center text-white px-3">
           <h1>EPDM Colored Rubber Granules</h1>
           <p>Durable, UV resistant, and ideal for sports & playground surfaces</p>
         </div>

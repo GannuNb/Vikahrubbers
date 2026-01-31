@@ -1,5 +1,6 @@
 import React from 'react';
-import { HashRouter as Router, Routes, Route } from 'react-router-dom';  // Updated line
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom'; 
+
 import Home from './Home';
 import Navbar from './Navbar';
 import Footer from './Footer';
@@ -16,7 +17,7 @@ import 'bootstrap/dist/js/bootstrap.bundle.min.js';
 
 function App() {
   return (
-    <Router>  {/* Using HashRouter here */}
+    <Router>  
       <Navbar />
       <Routes>
         <Route path="/" element={<Home />} />

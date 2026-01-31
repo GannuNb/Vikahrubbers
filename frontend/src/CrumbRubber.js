@@ -1,54 +1,123 @@
-import React, { useEffect } from 'react';
-import './CrumbRubber.css';
-import abtimg from './images/cr1.jpg';
-import crumb1 from './images/crumb1.png';
-import crumb2 from './images/crumb2.webp';
-import crumb3 from './images/crumb3.jpg';
-import crumb4 from './images/crumb4.jpg';
-import crumb5 from './images/crumb5.jpg';
+import React, { useEffect } from "react";
+import "./CrumbRubber.css";
+import abtimg from "./images/cr1.jpg";
+import crumb1 from "./images/crumb1.png";
+import crumb2 from "./images/crumb2.webp";
+import crumb3 from "./images/crumb3.jpg";
+import crumb4 from "./images/crumb4.jpg";
+import crumb5 from "./images/crumb5.jpg";
+import { Helmet } from "react-helmet";
 
 const CrumbRubber = () => {
   useEffect(() => {
     window.scrollTo(0, 0);
   }, []);
 
+  const structuredData = {
+    "@context": "https://schema.org",
+    "@type": "Product",
+    name: "Crumb Rubber",
+    description:
+      "High-quality rubber granules made from recycled tires for versatile industrial use.",
+    brand: {
+      "@type": "Organization",
+      name: "Vikah Rubbers",
+    },
+    material: "Recycled Rubber",
+    url: "https://vikahrubbers.com/CrumbRubber",
+    additionalProperty: [
+      {
+        "@type": "PropertyValue",
+        name: "Particle Size",
+        value: "1mm – 5mm",
+      },
+      {
+        "@type": "PropertyValue",
+        name: "Applications",
+        value: "Sports surfaces, playgrounds, industrial mats, asphalt mixing",
+      },
+    ],
+  };
+
   return (
     <main className="full-width-container">
-      <section className="hero-banner">
-  <img src={abtimg} alt="Crumb Rubber Production" />
-  <div className="hero-text">
-    <h1>Crumb Rubber</h1>
-    <p>High-quality rubber granules made from recycled tires for versatile industrial use</p>
-  </div>
-</section>
+      <Helmet>
+        <title>Crumb Rubber | Vikah Rubbers</title>
+        <meta
+          name="description"
+          content="High-quality crumb rubber granules made from recycled tires. Suitable for sports surfaces, industrial mats, and asphalt mixing."
+        />
+        <meta
+          name="keywords"
+          content="Crumb Rubber, Recycled Rubber, Rubber Granules, Tire Recycling, Industrial Rubber"
+        />
+        <meta name="robots" content="index, follow" />
+        <link rel="canonical" href="https://vikahrubbers.com/CrumbRubber" />
 
+        {/* Structured Data */}
+        <script type="application/ld+json">
+          {JSON.stringify(structuredData)}
+        </script>
+      </Helmet>
+      <section className="hero-banner">
+        <img src={abtimg} alt="Crumb Rubber Production" />
+        <div className="hero-text">
+          <h1>Crumb Rubber</h1>
+          <p>
+            High-quality rubber granules made from recycled tires for versatile
+            industrial use
+          </p>
+        </div>
+      </section>
 
       <section className="intro-section">
         <h2 className="products-heading mt-5">Crumb Rubber</h2>
         <p>
-          Crumb rubber is made by reducing scrap tires into small, uniform granules. Inherent reinforcing materials, such as steel and fiber, are removed, along with other types of inert contaminants, such as dust, glass, or rock.
+          Crumb rubber is made by reducing scrap tires into small, uniform
+          granules. Inherent reinforcing materials, such as steel and fiber, are
+          removed, along with other types of inert contaminants, such as dust,
+          glass, or rock.
         </p>
         <p>
-          <strong>VIKAH RUBBERS Pvt Ltd</strong> has the nationwide capacity to produce more than 52,000 tonnes of crumb rubber annually for a wide variety of commercial applications.
+          <strong>VIKAH RUBBERS Pvt Ltd</strong> has the nationwide capacity to
+          produce more than 52,000 tonnes of crumb rubber annually for a wide
+          variety of commercial applications.
         </p>
       </section>
 
       <section className="production-process">
         <h2>Production Process</h2>
         <p>
-          We use the ambient mechanical grinding method. In the ambient mechanical grinding process, the breaking up of a scrap tire happens at or above normal room temperature. Ambient grinding is a multi-step technology and uses whole or pre-treated car or truck tires in the form of shred or chips, or sidewalls or treads. The rubbers, metals, and textiles are sequentially separated out. Tires are passed through a shredder, which breaks the tires into chips.
+          We use the ambient mechanical grinding method. In the ambient
+          mechanical grinding process, the breaking up of a scrap tire happens
+          at or above normal room temperature. Ambient grinding is a multi-step
+          technology and uses whole or pre-treated car or truck tires in the
+          form of shred or chips, or sidewalls or treads. The rubbers, metals,
+          and textiles are sequentially separated out. Tires are passed through
+          a shredder, which breaks the tires into chips.
         </p>
         <p>
-          The chips are fed into a granulator that breaks them into small pieces while removing steel and fiber in the process. Any remaining steel is removed magnetically and fiber through a combination of shaking screens and wind sifters. Finer rubber particles can be obtained through further grinding in secondary granulators and high-speed rotary mills.
+          The chips are fed into a granulator that breaks them into small pieces
+          while removing steel and fiber in the process. Any remaining steel is
+          removed magnetically and fiber through a combination of shaking
+          screens and wind sifters. Finer rubber particles can be obtained
+          through further grinding in secondary granulators and high-speed
+          rotary mills.
         </p>
-        <p>
-          The machines most commonly we use were :
-        </p>
+        <p>The machines most commonly we use were :</p>
         <ul>
-          <li><strong>Primary shredder</strong></li>
-          <li><strong>secondary shredder</strong></li>
-          <li><strong>Granulators</strong></li>
-          <li><strong>Grinding Mills</strong></li>
+          <li>
+            <strong>Primary shredder</strong>
+          </li>
+          <li>
+            <strong>secondary shredder</strong>
+          </li>
+          <li>
+            <strong>Granulators</strong>
+          </li>
+          <li>
+            <strong>Grinding Mills</strong>
+          </li>
         </ul>
       </section>
 
@@ -135,9 +204,13 @@ const CrumbRubber = () => {
 
       <section className="product-description">
         <h2>Crumb Rubber Powder - 30 Mesh</h2>
-        <p><strong>Description:</strong></p>
         <p>
-          Our premium 30 Mesh Crumb Rubber is manufactured and supplied to meet the highest standards, making it ideal for various applications, including:
+          <strong>Description:</strong>
+        </p>
+        <p>
+          Our premium 30 Mesh Crumb Rubber is manufactured and supplied to meet
+          the highest standards, making it ideal for various applications,
+          including:
         </p>
         <ul>
           <li>Tyre Manufacturing</li>
@@ -146,10 +219,20 @@ const CrumbRubber = () => {
           <li>Rubber Mats</li>
           <li>Rubber Bushes</li>
         </ul>
-        <p><strong>Production Capacity:</strong></p>
-        <p>With a robust manufacturing facility, we achieve a production capacity of <strong>2200 tons per month</strong>.</p>
-        <p><strong>Quality Assurance:</strong></p>
-        <p>Each batch undergoes stringent quality checks at our advanced testing unit to ensure top-notch quality and utility.</p>
+        <p>
+          <strong>Production Capacity:</strong>
+        </p>
+        <p>
+          With a robust manufacturing facility, we achieve a production capacity
+          of <strong>2200 tons per month</strong>.
+        </p>
+        <p>
+          <strong>Quality Assurance:</strong>
+        </p>
+        <p>
+          Each batch undergoes stringent quality checks at our advanced testing
+          unit to ensure top-notch quality and utility.
+        </p>
       </section>
 
       <section className="centered-images small-images">
@@ -162,17 +245,31 @@ const CrumbRubber = () => {
 
         <section className="product-details">
           <p>
-            Mesh refers to material that has been sized by passing it through a screen with a specific number of holes per inch (25.4 mm). For instance, 40 mesh crumb rubber powder passes through a screen with 40 holes per inch, creating rubber granules that are slightly under 1/40th of an inch. The exact particle size can vary based on the wire thickness used in the screen.
+            Mesh refers to material that has been sized by passing it through a
+            screen with a specific number of holes per inch (25.4 mm). For
+            instance, 40 mesh crumb rubber powder passes through a screen with
+            40 holes per inch, creating rubber granules that are slightly under
+            1/40th of an inch. The exact particle size can vary based on the
+            wire thickness used in the screen.
           </p>
         </section>
 
         <section className="product-description">
           <h4>Crumb Rubber Granules</h4>
           <p>
-            Crumb rubber granules are recycled rubber produced from automotive and truck scrap tires. During recycling, steel and tire cord (fluff) are removed, leaving behind tire rubber in granular form. Further processing with a granulator or cracker mill, sometimes with cryogenic assistance or mechanical methods, reduces the particle size. Granules are then sized and classified based on criteria such as color (black only or black and white).
+            Crumb rubber granules are recycled rubber produced from automotive
+            and truck scrap tires. During recycling, steel and tire cord (fluff)
+            are removed, leaving behind tire rubber in granular form. Further
+            processing with a granulator or cracker mill, sometimes with
+            cryogenic assistance or mechanical methods, reduces the particle
+            size. Granules are then sized and classified based on criteria such
+            as color (black only or black and white).
           </p>
           <p>
-            The granulate size is determined by passing through a screen, either by dimension (e.g., 1/4 inch) or mesh size (e.g., 10, 20 holes per inch). Crumb rubber is frequently used in applications like artificial turf to provide cushioning.
+            The granulate size is determined by passing through a screen, either
+            by dimension (e.g., 1/4 inch) or mesh size (e.g., 10, 20 holes per
+            inch). Crumb rubber is frequently used in applications like
+            artificial turf to provide cushioning.
           </p>
         </section>
       </section>

@@ -1,4 +1,5 @@
 import React, { useEffect } from 'react';
+import { Helmet } from "react-helmet";
 import './About.css';
 import abtimg1 from './images/about.jpg';
 import abtimg2 from './images/combo1.png';
@@ -11,6 +12,21 @@ const About = () => {
 
   return (
     <div className="about-modern">
+
+      {/* SEO Helmet */}
+      <Helmet>
+        <title>About Us | Vikah Rubbers Pvt Ltd</title>
+        <meta
+          name="description"
+          content="Vikah Rubbers Pvt Ltd is a leading rubber recycling company in Telangana, India. We specialize in crumb rubber, EPDM granules, and sustainable rubber manufacturing."
+        />
+        <meta
+          name="keywords"
+          content="Vikah Rubbers, rubber recycling India, crumb rubber manufacturers, EPDM granules, rubber processing Telangana, rubber waste management"
+        />
+        <link rel="canonical" href="https://vikahrubbers.com/about" />
+      </Helmet>
+      
       {/* Hero Section */}
       <section className="hero-half" style={{ backgroundImage: `url(${abtimg3})` }}>
         <div className="hero-content">
