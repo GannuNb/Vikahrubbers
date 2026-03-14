@@ -13,50 +13,53 @@ const CrumbRubber = () => {
     window.scrollTo(0, 0);
   }, []);
 
-  const structuredData = {
-    "@context": "https://schema.org",
-    "@type": "Product",
-    name: "Crumb Rubber",
-    description:
-      "High-quality rubber granules made from recycled tires for versatile industrial use.",
-    brand: {
-      "@type": "Organization",
-      name: "Vikah Rubbers",
-    },
-    material: "Recycled Rubber",
-    url: "https://vikahrubbers.com/CrumbRubber",
-    additionalProperty: [
-      {
-        "@type": "PropertyValue",
-        name: "Particle Size",
-        value: "1mm – 5mm",
-      },
-      {
-        "@type": "PropertyValue",
-        name: "Applications",
-        value: "Sports surfaces, playgrounds, industrial mats, asphalt mixing",
-      },
-    ],
-  };
-
   return (
     <main className="full-width-container">
+      
       <Helmet>
         <title>Crumb Rubber | Vikah Rubbers</title>
+
         <meta
           name="description"
-          content="High-quality crumb rubber granules made from recycled tires. Suitable for sports surfaces, industrial mats, and asphalt mixing."
+          content="High-quality crumb rubber granules made from recycled tires for sports surfaces, playgrounds, industrial mats and asphalt mixing."
         />
+
         <meta
           name="keywords"
-          content="Crumb Rubber, Recycled Rubber, Rubber Granules, Tire Recycling, Industrial Rubber"
+          content="crumb rubber, recycled rubber, rubber granules, tire recycling, Vikah Rubbers"
         />
+
         <meta name="robots" content="index, follow" />
+
         <link rel="canonical" href="https://vikahrubbers.com/CrumbRubber" />
 
-        {/* Structured Data */}
+        {/* Open Graph for social media */}
+        <meta property="og:title" content="Crumb Rubber | Vikah Rubbers" />
+        <meta
+          property="og:description"
+          content="High-quality crumb rubber granules made from recycled tires."
+        />
+        <meta
+          property="og:url"
+          content="https://vikahrubbers.com/CrumbRubber"
+        />
+        <meta property="og:type" content="website" />
+
+        {/* Structured Data (Safe WebPage schema) */}
         <script type="application/ld+json">
-          {JSON.stringify(structuredData)}
+          {JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "WebPage",
+            name: "Crumb Rubber",
+            description:
+              "High-quality crumb rubber granules made from recycled tires for versatile industrial use.",
+            url: "https://vikahrubbers.com/CrumbRubber",
+            publisher: {
+              "@type": "Organization",
+              name: "Vikah Rubbers",
+              url: "https://vikahrubbers.com",
+            },
+          })}
         </script>
       </Helmet>
       <section className="hero-banner">
@@ -69,7 +72,6 @@ const CrumbRubber = () => {
           </p>
         </div>
       </section>
-
       <section className="intro-section">
         <h2 className="products-heading mt-5">Crumb Rubber</h2>
         <p>
@@ -84,7 +86,6 @@ const CrumbRubber = () => {
           variety of commercial applications.
         </p>
       </section>
-
       <section className="production-process">
         <h2>Production Process</h2>
         <p>
@@ -120,7 +121,6 @@ const CrumbRubber = () => {
           </li>
         </ul>
       </section>
-
       <section className="applications">
         <h2>Applications for Rubber Granules / Crumb</h2>
 
@@ -195,13 +195,11 @@ const CrumbRubber = () => {
           </div>
         </div>
       </section>
-
       <section className="centered-images">
         <img src={crumb1} alt="Crumb Rubber 1" className="centered-img" />
         <img src={crumb2} alt="Crumb Rubber 2" className="centered-img" />
         <img src={crumb3} alt="Crumb Rubber 3" className="centered-img" />
       </section>
-
       <section className="product-description">
         <h2>Crumb Rubber Powder - 30 Mesh</h2>
         <p>
@@ -234,12 +232,10 @@ const CrumbRubber = () => {
           unit to ensure top-notch quality and utility.
         </p>
       </section>
-
       <section className="centered-images small-images">
         <img src={crumb4} alt="Crumb Rubber 4" className="small-centered-img" />
         <img src={crumb5} alt="Crumb Rubber 5" className="small-centered-img" />
       </section>
-
       <section className="product-info">
         <h2>Crumb Rubber Powder - 40 Mesh</h2>
 
